@@ -1,0 +1,646 @@
+
+> sthapatya-web.client@0.0.0 build
+> tsc -b && vite build
+
+src/Components/About/components/ui/button.tsx(47,3): error TS2304: Cannot find name 'VariantProps'.
+src/Components/About/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/Components/About/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/About/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/About/components/ui/carousel.tsx(12,20): error TS2304: Cannot find name 'UseEmblaCarouselType'.
+src/Components/About/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/About/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/About/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/About/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/About/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+  Type '"payload"' is not assignable to type '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+src/Components/About/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/Components/About/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/Components/About/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/About/components/ui/form.tsx(14,8): error TS2307: Cannot find module 'react-hook-form@7.55.0' or its corresponding type declarations.
+src/Components/About/components/ui/pagination.tsx(75,7): error TS2783: 'size' is specified more than once, so this usage will be overwritten.
+src/Components/About/components/ui/pagination.tsx(92,7): error TS2783: 'size' is specified more than once, so this usage will be overwritten.
+src/Components/About/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/About/components/ui/sidebar.tsx(270,17): error TS7006: Parameter 'event' implicitly has an 'any' type.
+src/Components/About/components/ui/sonner.tsx(3,26): error TS2307: Cannot find module 'next-themes@0.4.6' or its corresponding type declarations.
+src/Components/About/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Careers/Career.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/Components/Careers/Career.tsx(3,56): error TS6133: 'User' is declared but its value is never read.
+src/Components/Careers/Career.tsx(3,62): error TS6133: 'Calendar' is declared but its value is never read.
+src/Components/Careers/Career.tsx(3,164): error TS6133: 'X' is declared but its value is never read.
+src/Components/Careers/Career.tsx(3,189): error TS6133: 'Coffee' is declared but its value is never read.
+src/Components/Careers/Career.tsx(6,10): error TS6133: 'Card' is declared but its value is never read.
+src/Components/Careers/Career.tsx(6,29): error TS6133: 'CardDescription' is declared but its value is never read.
+src/Components/Careers/Career.tsx(6,46): error TS6133: 'CardHeader' is declared but its value is never read.
+src/Components/Careers/Career.tsx(6,58): error TS6133: 'CardTitle' is declared but its value is never read.
+src/Components/Careers/Career.tsx(76,7): error TS6133: 'testimonials' is declared but its value is never read.
+src/Components/Careers/Career.tsx(277,20): error TS7031: Binding element 'job' implicitly has an 'any' type.
+src/Components/Careers/Career.tsx(277,25): error TS7031: Binding element 'onExpand' implicitly has an 'any' type.
+src/Components/Careers/Career.tsx(277,35): error TS7031: Binding element 'isExpanded' implicitly has an 'any' type.
+src/Components/Careers/Career.tsx(324,60): error TS7006: Parameter 'req' implicitly has an 'any' type.
+src/Components/Careers/Career.tsx(324,65): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Careers/Career.tsx(337,54): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(338,54): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(341,54): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(342,54): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(364,29): error TS7031: Binding element 'jobTitle' implicitly has an 'any' type.
+src/Components/Careers/Career.tsx(373,27): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/Components/Careers/Career.tsx(442,73): error TS2322: Type 'File' is not assignable to type 'null'.
+src/Components/Careers/Career.tsx(442,81): error TS18047: 'e.target.files' is possibly 'null'.
+src/Components/Careers/Career.tsx(474,27): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/Components/Careers/Career.tsx(621,77): error TS2322: Type 'File' is not assignable to type 'null'.
+src/Components/Careers/Career.tsx(621,85): error TS18047: 'e.target.files' is possibly 'null'.
+src/Components/Careers/Career.tsx(656,27): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/Components/Careers/Career.tsx(816,27): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/Components/Careers/Career.tsx(957,83): error TS2322: Type 'File' is not assignable to type 'null'.
+src/Components/Careers/Career.tsx(957,91): error TS18047: 'e.target.files' is possibly 'null'.
+src/Components/Careers/Career.tsx(972,83): error TS2322: Type 'File' is not assignable to type 'null'.
+src/Components/Careers/Career.tsx(972,94): error TS18047: 'e.target.files' is possibly 'null'.
+src/Components/Careers/Career.tsx(984,38): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(985,38): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(988,38): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(989,38): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1062,30): error TS7006: Parameter 'jobId' implicitly has an 'any' type.
+src/Components/Careers/Career.tsx(1187,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1188,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1189,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1190,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1193,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1194,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1195,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1196,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1198,44): error TS2531: Object is possibly 'null'.
+src/Components/Careers/Career.tsx(1214,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1215,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1216,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1217,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1220,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1221,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1222,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1223,42): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1225,44): error TS2531: Object is possibly 'null'.
+src/Components/Careers/Career.tsx(1244,44): error TS2339: Property 'culture' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1250,48): error TS2339: Property 'culture' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1268,44): error TS2339: Property 'culture' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1280,56): error TS2339: Property 'culture' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1312,44): error TS2339: Property 'culture' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1323,56): error TS2339: Property 'culture' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1332,41): error TS2353: Object literal may only specify known properties, and 'ringColor' does not exist in type 'MotionStyle'.
+src/Components/Careers/Career.tsx(1363,44): error TS2339: Property 'gallery' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1380,52): error TS2339: Property 'gallery' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1436,44): error TS2339: Property 'jobs' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1451,44): error TS2339: Property 'jobs' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1511,52): error TS2339: Property 'jobs' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1526,44): error TS2339: Property 'jobs' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1550,50): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1551,50): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1552,50): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1555,50): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1556,50): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1557,50): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1578,44): error TS2339: Property 'internships' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1595,52): error TS2339: Property 'internships' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1619,64): error TS2339: Property 'internships' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1639,56): error TS2339: Property 'internships' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1651,58): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1652,58): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1653,58): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1656,58): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1657,58): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1658,58): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(1687,44): error TS2339: Property 'evp' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1725,52): error TS2339: Property 'evp' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1780,44): error TS2339: Property 'engagement' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1793,70): error TS6133: 'index' is declared but its value is never read.
+src/Components/Careers/Career.tsx(1856,44): error TS2339: Property 'engagement' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1869,56): error TS2339: Property 'engagement' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1902,44): error TS2339: Property 'engagement' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1921,56): error TS2339: Property 'engagement' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1941,68): error TS2339: Property 'engagement' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1958,60): error TS2339: Property 'engagement' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1984,44): error TS2339: Property 'engagement' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(1997,60): error TS2339: Property 'engagement' does not exist on type '{}'.
+src/Components/Careers/Career.tsx(2051,49): error TS2353: Object literal may only specify known properties, and ''&:hover'' does not exist in type 'Properties<string | number, string & {}>'.
+src/Components/Careers/Career.tsx(2053,75): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(2054,75): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(2073,75): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(2074,75): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(2101,54): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(2102,54): error TS2339: Property 'querySelector' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(2105,54): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Careers/Career.tsx(2106,54): error TS2339: Property 'querySelector' does not exist on type 'EventTarget'.
+src/Components/Careers/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/Components/Careers/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Careers/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Careers/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Careers/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Careers/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Careers/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Careers/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+  Type '"payload"' is not assignable to type '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+src/Components/Careers/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/Components/Careers/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/Components/Careers/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Careers/components/ui/form.tsx(14,8): error TS2307: Cannot find module 'react-hook-form@7.55.0' or its corresponding type declarations.
+src/Components/Careers/components/ui/pagination.tsx(6,8): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Careers/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Careers/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/ContactUs/components/AboutSection.tsx(75,45): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/AboutSection.tsx(76,45): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactForm.tsx(164,35): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactForm.tsx(167,35): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactInfo.tsx(90,49): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactInfo.tsx(91,49): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactInfo.tsx(120,43): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactInfo.tsx(121,43): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactInfo.tsx(131,43): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactInfo.tsx(132,43): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactInfo.tsx(142,43): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactInfo.tsx(143,43): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactInfo.tsx(157,41): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactInfo.tsx(158,41): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactModal.tsx(2,26): error TS6133: 'MapPin' is declared but its value is never read.
+src/Components/ContactUs/components/ContactModal.tsx(87,52): error TS2339: Property 'ringColor' does not exist on type 'CSSStyleDeclaration'.
+src/Components/ContactUs/components/ContactModal.tsx(106,52): error TS2339: Property 'ringColor' does not exist on type 'CSSStyleDeclaration'.
+src/Components/ContactUs/components/ContactModal.tsx(125,52): error TS2339: Property 'ringColor' does not exist on type 'CSSStyleDeclaration'.
+src/Components/ContactUs/components/ContactModal.tsx(143,52): error TS2339: Property 'ringColor' does not exist on type 'CSSStyleDeclaration'.
+src/Components/ContactUs/components/ContactModal.tsx(168,52): error TS2339: Property 'ringColor' does not exist on type 'CSSStyleDeclaration'.
+src/Components/ContactUs/components/ContactModal.tsx(194,52): error TS2339: Property 'ringColor' does not exist on type 'CSSStyleDeclaration'.
+src/Components/ContactUs/components/ContactModal.tsx(221,52): error TS2339: Property 'ringColor' does not exist on type 'CSSStyleDeclaration'.
+src/Components/ContactUs/components/ContactModal.tsx(246,52): error TS2339: Property 'ringColor' does not exist on type 'CSSStyleDeclaration'.
+src/Components/ContactUs/components/ContactModal.tsx(274,48): error TS2339: Property 'ringColor' does not exist on type 'CSSStyleDeclaration'.
+src/Components/ContactUs/components/ContactModal.tsx(285,47): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactModal.tsx(286,47): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactModal.tsx(301,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactModal.tsx(302,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactModal.tsx(305,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ContactModal.tsx(306,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/FAQSection.tsx(131,47): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/FAQSection.tsx(132,47): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/FAQSection.tsx(145,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/FAQSection.tsx(146,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/FAQSection.tsx(149,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/FAQSection.tsx(150,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/HeroSection.tsx(38,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/HeroSection.tsx(39,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/HeroSection.tsx(43,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/HeroSection.tsx(44,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/HeroSection.tsx(176,29): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/HeroSection.tsx(179,29): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/HeroSection.tsx(193,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/HeroSection.tsx(194,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/HeroSection.tsx(197,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/HeroSection.tsx(199,28): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/OfficeLocations.tsx(73,17): error TS2353: Object literal may only specify known properties, and 'ringColor' does not exist in type 'Properties<string | number, string & {}>'.
+src/Components/ContactUs/components/OfficeLocations.tsx(106,52): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/OfficeLocations.tsx(107,52): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/OfficeLocations.tsx(115,52): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/OfficeLocations.tsx(116,52): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/OfficeLocations.tsx(137,51): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/OfficeLocations.tsx(138,51): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ServicesOverview.tsx(100,49): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ServicesOverview.tsx(101,49): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ServicesOverview.tsx(124,45): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ServicesOverview.tsx(125,45): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/SocialLinks.tsx(27,24): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/SocialLinks.tsx(28,24): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/SocialLinks.tsx(31,24): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/SocialLinks.tsx(32,24): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/TestimonialsSection.tsx(143,45): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/TestimonialsSection.tsx(144,45): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/Components/ContactUs/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/ContactUs/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/ContactUs/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/ContactUs/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/ContactUs/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/ContactUs/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/ContactUs/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+  Type '"payload"' is not assignable to type '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+src/Components/ContactUs/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/Components/ContactUs/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/Components/ContactUs/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/ContactUs/components/ui/form.tsx(14,8): error TS2307: Cannot find module 'react-hook-form@7.55.0' or its corresponding type declarations.
+src/Components/ContactUs/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/ContactUs/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/ContactUs/Contact.tsx(127,75): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/Contact.tsx(128,75): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/Contact.tsx(147,75): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/Contact.tsx(148,75): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/Contact.tsx(171,71): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/ContactUs/Contact.tsx(172,71): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Home/components/About/components/AboutSection.tsx(3,1): error TS6133: 'Button' is declared but its value is never read.
+src/Components/Home/components/About/components/AboutSection.tsx(4,1): error TS6133: 'Card' is declared but its value is never read.
+src/Components/Home/components/About/components/AboutSection.tsx(226,60): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/AboutSection.tsx(263,60): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/AboutSection.tsx(278,39): error TS6133: 'getOverlayStyle' is declared but its value is never read.
+src/Components/Home/components/About/components/AboutSection.tsx(278,58): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/AboutSection.tsx(293,39): error TS6133: 'getTextAnimation' is declared but its value is never read.
+src/Components/Home/components/About/components/AboutSection.tsx(293,59): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/AboutSection.tsx(331,37): error TS17001: JSX elements cannot have multiple attributes with the same name.
+src/Components/Home/components/About/components/LiquidWaveDemo.tsx(89,37): error TS17001: JSX elements cannot have multiple attributes with the same name.
+src/Components/Home/components/About/components/OverlayStyleDemo.tsx(64,37): error TS17001: JSX elements cannot have multiple attributes with the same name.
+src/Components/Home/components/About/components/OverlayStyles.tsx(4,37): error TS7031: Binding element 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(4,44): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(5,32): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(33,41): error TS6133: 'index' is declared but its value is never read.
+src/Components/Home/components/About/components/OverlayStyles.tsx(33,41): error TS7031: Binding element 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(33,48): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(73,40): error TS6133: 'index' is declared but its value is never read.
+src/Components/Home/components/About/components/OverlayStyles.tsx(73,40): error TS7031: Binding element 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(73,47): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(118,45): error TS6133: 'index' is declared but its value is never read.
+src/Components/Home/components/About/components/OverlayStyles.tsx(118,45): error TS7031: Binding element 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(118,52): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(157,43): error TS6133: 'index' is declared but its value is never read.
+src/Components/Home/components/About/components/OverlayStyles.tsx(157,43): error TS7031: Binding element 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(157,50): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(206,41): error TS6133: 'index' is declared but its value is never read.
+src/Components/Home/components/About/components/OverlayStyles.tsx(206,41): error TS7031: Binding element 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(206,48): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(257,42): error TS6133: 'index' is declared but its value is never read.
+src/Components/Home/components/About/components/OverlayStyles.tsx(257,42): error TS7031: Binding element 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(257,49): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(299,42): error TS6133: 'index' is declared but its value is never read.
+src/Components/Home/components/About/components/OverlayStyles.tsx(299,42): error TS7031: Binding element 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(299,49): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(354,43): error TS6133: 'index' is declared but its value is never read.
+src/Components/Home/components/About/components/OverlayStyles.tsx(354,43): error TS7031: Binding element 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(354,50): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(389,40): error TS6133: 'index' is declared but its value is never read.
+src/Components/Home/components/About/components/OverlayStyles.tsx(389,40): error TS7031: Binding element 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(389,47): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(424,39): error TS6133: 'index' is declared but its value is never read.
+src/Components/Home/components/About/components/OverlayStyles.tsx(424,39): error TS7031: Binding element 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(424,46): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(459,43): error TS6133: 'index' is declared but its value is never read.
+src/Components/Home/components/About/components/OverlayStyles.tsx(459,43): error TS7031: Binding element 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/OverlayStyles.tsx(459,50): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/Components/Home/components/About/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/Components/Home/components/About/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Home/components/About/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Home/components/About/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Home/components/About/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Home/components/About/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Home/components/About/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Home/components/About/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+  Type '"payload"' is not assignable to type '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+src/Components/Home/components/About/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/Components/Home/components/About/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/Components/Home/components/About/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Home/components/About/components/ui/form.tsx(14,8): error TS2307: Cannot find module 'react-hook-form@7.55.0' or its corresponding type declarations.
+src/Components/Home/components/About/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Home/components/About/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Home/components/Founder/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/Components/Home/components/Founder/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Home/components/Founder/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Home/components/Founder/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Home/components/Founder/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Home/components/Founder/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Home/components/Founder/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Home/components/Founder/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+  Type '"payload"' is not assignable to type '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+src/Components/Home/components/Founder/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/Components/Home/components/Founder/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/Components/Home/components/Founder/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Home/components/Founder/components/ui/form.tsx(14,8): error TS2307: Cannot find module 'react-hook-form@7.55.0' or its corresponding type declarations.
+src/Components/Home/components/Founder/components/ui/select.tsx(9,8): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/components/Founder/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Home/components/Founder/components/ui/sonner.tsx(3,26): error TS2307: Cannot find module 'next-themes@0.4.6' or its corresponding type declarations.
+src/Components/Home/components/Founder/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Home/components/Homefooter.tsx(193,30): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Home/components/Homefooter.tsx(194,30): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Home/components/Homefooter.tsx(197,30): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Home/components/Homefooter.tsx(198,30): error TS2339: Property 'style' does not exist on type 'EventTarget'.
+src/Components/Home/components/Homeprojects-section.tsx(3,22): error TS1261: Already included file name 'D:/sthapatya-web/sthapatya-web.client/src/Components/Home/components/kmlfile.tsx' differs from file name 'D:/sthapatya-web/sthapatya-web.client/src/Components/Home/components/Kmlfile.tsx' only in casing.
+  The file is in the program because:
+    Imported via "./kmlfile" from file 'D:/sthapatya-web/sthapatya-web.client/src/Components/Home/components/Homeprojects-section.tsx'
+    Imported via "../../Kmlfile" from file 'D:/sthapatya-web/sthapatya-web.client/src/Components/Home/components/Project/components/MergedProjectsClientsSection.tsx'
+    Matched by include pattern 'src' in 'D:/sthapatya-web/sthapatya-web.client/tsconfig.app.json'
+src/Components/Home/components/Homeprojects-section.tsx(33,11): error TS6133: 'visibleCards' is declared but its value is never read.
+src/Components/Home/components/Homeservices-section.tsx(53,11): error TS6133: 'itemsPerView' is declared but its value is never read.
+src/Components/Home/components/Homeservices-section.tsx(86,33): error TS7006: Parameter 'service' implicitly has an 'any' type.
+src/Components/Home/components/Homesticky-sidebar.tsx(39,28): error TS7006: Parameter 'sectionId' implicitly has an 'any' type.
+src/Components/Home/components/Homesticky-sidebar.tsx(57,53): error TS2345: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<null>'.
+src/Components/Home/components/Project/components/ExpansionAnimations.tsx(1,20): error TS6133: 'useEffect' is declared but its value is never read.
+src/Components/Home/components/Project/components/MergedProjectsClientsSection.tsx(3,1): error TS6192: All imports in import declaration are unused.
+src/Components/Home/components/Project/components/MergedProjectsClientsSection.tsx(5,21): error TS1149: File name 'D:/sthapatya-web/sthapatya-web.client/src/Components/Home/components/Kmlfile.tsx' differs from already included file name 'D:/sthapatya-web/sthapatya-web.client/src/Components/Home/components/kmlfile.tsx' only in casing.
+  The file is in the program because:
+    Imported via "./kmlfile" from file 'D:/sthapatya-web/sthapatya-web.client/src/Components/Home/components/Homeprojects-section.tsx'
+    Imported via "../../Kmlfile" from file 'D:/sthapatya-web/sthapatya-web.client/src/Components/Home/components/Project/components/MergedProjectsClientsSection.tsx'
+    Matched by include pattern 'src' in 'D:/sthapatya-web/sthapatya-web.client/tsconfig.app.json'
+src/Components/Home/components/Project/components/MergedProjectsClientsSection.tsx(322,9): error TS6133: 'visibleCards' is declared but its value is never read.
+src/Components/Home/components/Project/components/StyleVariants.tsx(80,7): error TS6133: 'colorSchemes' is declared but its value is never read.
+src/Components/Home/components/Project/components/StyleVariants.tsx(203,28): error TS6133: 'variant' is declared but its value is never read.
+src/Components/Home/components/Project/components/StyleVariants.tsx(285,25): error TS6133: 'variant' is declared but its value is never read.
+src/Components/Home/components/Project/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/Components/Home/components/Project/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Home/components/Project/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Home/components/Project/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Home/components/Project/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Home/components/Project/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Home/components/Project/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Home/components/Project/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+  Type '"payload"' is not assignable to type '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+src/Components/Home/components/Project/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/Components/Home/components/Project/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/Components/Home/components/Project/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Home/components/Project/components/ui/form.tsx(14,8): error TS2307: Cannot find module 'react-hook-form@7.55.0' or its corresponding type declarations.
+src/Components/Home/components/Project/components/ui/menubar.tsx(4,35): error TS2307: Cannot find module '@radix-ui/react-menubar@' or its corresponding type declarations.
+src/Components/Home/components/Project/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Home/components/Project/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Home/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/Components/Home/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Home/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Home/components/ui/carousel.tsx(6,5): error TS2303: Circular definition of import alias 'Carousel'.
+src/Components/Home/components/ui/carousel.tsx(6,5): error TS2459: Module '"./Carousel"' declares 'Carousel' locally, but it is not exported.
+src/Components/Home/components/ui/carousel.tsx(7,5): error TS2303: Circular definition of import alias 'CarouselContent'.
+src/Components/Home/components/ui/carousel.tsx(7,5): error TS2459: Module '"./Carousel"' declares 'CarouselContent' locally, but it is not exported.
+src/Components/Home/components/ui/carousel.tsx(8,5): error TS2303: Circular definition of import alias 'CarouselItem'.
+src/Components/Home/components/ui/carousel.tsx(8,5): error TS2459: Module '"./Carousel"' declares 'CarouselItem' locally, but it is not exported.
+src/Components/Home/components/ui/carousel.tsx(9,5): error TS2303: Circular definition of import alias 'CarouselPrevious'.
+src/Components/Home/components/ui/carousel.tsx(9,5): error TS2459: Module '"./Carousel"' declares 'CarouselPrevious' locally, but it is not exported.
+src/Components/Home/components/ui/carousel.tsx(10,5): error TS2303: Circular definition of import alias 'CarouselNext'.
+src/Components/Home/components/ui/carousel.tsx(10,5): error TS2459: Module '"./Carousel"' declares 'CarouselNext' locally, but it is not exported.
+src/Components/Home/components/ui/carousel.tsx(11,5): error TS2303: Circular definition of import alias 'CarouselApi'.
+src/Components/Home/components/ui/carousel.tsx(11,10): error TS2459: Module '"./Carousel"' declares 'CarouselApi' locally, but it is not exported.
+src/Components/Home/components/ui/carousel.tsx(12,8): error TS1149: File name 'D:/sthapatya-web/sthapatya-web.client/src/Components/Home/components/ui/Carousel.tsx' differs from already included file name 'D:/sthapatya-web/sthapatya-web.client/src/Components/Home/components/ui/carousel.tsx' only in casing.
+  The file is in the program because:
+    Matched by include pattern 'src' in 'D:/sthapatya-web/sthapatya-web.client/tsconfig.app.json'
+    Imported via "./Carousel" from file 'D:/sthapatya-web/sthapatya-web.client/src/Components/Home/components/ui/carousel.tsx'
+src/Components/Home/components/ui/carousel.tsx(13,35): error TS2307: Cannot find module './figma/ImageWithFallback' or its corresponding type declarations.
+src/Components/Home/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Home/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Home/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Home/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Home/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+  Type '"payload"' is not assignable to type '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+src/Components/Home/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/Components/Home/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/Components/Home/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Home/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Home/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Home/Counts/components/animated-counter.tsx(1,40): error TS6133: 'useTransform' is declared but its value is never read.
+src/Components/Home/Counts/components/animated-counter.tsx(11,55): error TS6133: 'duration' is declared but its value is never read.
+src/Components/Home/Counts/components/ui/accordion.tsx(4,37): error TS2307: Cannot find module '@radix-ui/react-accordion@1.2.3' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/accordion.tsx(5,33): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/alert-dialog.tsx(4,39): error TS2307: Cannot find module '@radix-ui/react-alert-dialog@1.1.6' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/alert.tsx(2,40): error TS2307: Cannot find module 'class-variance-authority@0.7.1' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/aspect-ratio.tsx(3,39): error TS2307: Cannot find module '@radix-ui/react-aspect-ratio@1.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/avatar.tsx(4,34): error TS2307: Cannot find module '@radix-ui/react-avatar@1.1.3' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/badge.tsx(2,22): error TS2307: Cannot find module '@radix-ui/react-slot@1.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/badge.tsx(3,40): error TS2307: Cannot find module 'class-variance-authority@0.7.1' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/breadcrumb.tsx(2,22): error TS2307: Cannot find module '@radix-ui/react-slot@1.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/breadcrumb.tsx(3,46): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/button.tsx(2,22): error TS2307: Cannot find module '@radix-ui/react-slot@1.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/button.tsx(3,40): error TS2307: Cannot find module 'class-variance-authority@0.7.1' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/calendar.tsx(4,43): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/calendar.tsx(5,27): error TS2307: Cannot find module 'react-day-picker@8.10.1' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Home/Counts/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Home/Counts/components/ui/carousel.tsx(6,8): error TS2307: Cannot find module 'embla-carousel-react@8.6.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/carousel.tsx(7,39): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/chart.tsx(4,36): error TS2307: Cannot find module 'recharts@2.15.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Home/Counts/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Home/Counts/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Home/Counts/components/ui/checkbox.tsx(4,36): error TS2307: Cannot find module '@radix-ui/react-checkbox@1.1.4' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/checkbox.tsx(5,27): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/collapsible.tsx(3,39): error TS2307: Cannot find module '@radix-ui/react-collapsible@1.1.3' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/command.tsx(4,45): error TS2307: Cannot find module 'cmdk@1.1.1' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/command.tsx(5,28): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/context-menu.tsx(4,39): error TS2307: Cannot find module '@radix-ui/react-context-menu@2.2.6' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/context-menu.tsx(5,57): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/dialog.tsx(4,34): error TS2307: Cannot find module '@radix-ui/react-dialog@1.1.6' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/dialog.tsx(5,23): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/drawer.tsx(4,43): error TS2307: Cannot find module 'vaul@1.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/dropdown-menu.tsx(4,40): error TS2307: Cannot find module '@radix-ui/react-dropdown-menu@2.1.6' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/dropdown-menu.tsx(5,57): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/form.tsx(4,33): error TS2307: Cannot find module '@radix-ui/react-label@2.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/form.tsx(5,22): error TS2307: Cannot find module '@radix-ui/react-slot@1.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/form.tsx(14,8): error TS2307: Cannot find module 'react-hook-form@7.55.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/hover-card.tsx(4,37): error TS2307: Cannot find module '@radix-ui/react-hover-card@1.1.6' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/input-otp.tsx(4,43): error TS2307: Cannot find module 'input-otp@1.4.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/input-otp.tsx(5,27): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/input-otp.tsx(47,61): error TS2339: Property 'slots' does not exist on type '{}'.
+src/Components/Home/Counts/components/ui/label.tsx(4,33): error TS2307: Cannot find module '@radix-ui/react-label@2.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/menubar.tsx(4,35): error TS2307: Cannot find module '@radix-ui/react-menubar@1.1.6' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/menubar.tsx(5,57): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/navigation-menu.tsx(2,42): error TS2307: Cannot find module '@radix-ui/react-navigation-menu@1.2.5' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/navigation-menu.tsx(3,21): error TS2307: Cannot find module 'class-variance-authority@0.7.1' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/navigation-menu.tsx(4,33): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/pagination.tsx(6,8): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/pagination.tsx(75,7): error TS2783: 'size' is specified more than once, so this usage will be overwritten.
+src/Components/Home/Counts/components/ui/pagination.tsx(92,7): error TS2783: 'size' is specified more than once, so this usage will be overwritten.
+src/Components/Home/Counts/components/ui/popover.tsx(4,35): error TS2307: Cannot find module '@radix-ui/react-popover@1.1.6' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/progress.tsx(4,36): error TS2307: Cannot find module '@radix-ui/react-progress@1.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/radio-group.tsx(4,38): error TS2307: Cannot find module '@radix-ui/react-radio-group@1.2.3' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/radio-group.tsx(5,28): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/resizable.tsx(4,34): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/resizable.tsx(5,37): error TS2307: Cannot find module 'react-resizable-panels@2.1.7' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/scroll-area.tsx(4,38): error TS2307: Cannot find module '@radix-ui/react-scroll-area@1.2.3' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/select.tsx(4,34): error TS2307: Cannot find module '@radix-ui/react-select@2.1.6' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/select.tsx(9,8): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/separator.tsx(4,37): error TS2307: Cannot find module '@radix-ui/react-separator@1.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/sheet.tsx(4,33): error TS2307: Cannot find module '@radix-ui/react-dialog@1.1.6' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/sheet.tsx(5,23): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/sidebar.tsx(4,22): error TS2307: Cannot find module '@radix-ui/react-slot@1.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/sidebar.tsx(5,35): error TS2307: Cannot find module 'class-variance-authority@0.7.1' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/sidebar.tsx(6,31): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/sidebar.tsx(270,17): error TS7006: Parameter 'event' implicitly has an 'any' type.
+src/Components/Home/Counts/components/ui/slider.tsx(4,34): error TS2307: Cannot find module '@radix-ui/react-slider@1.2.3' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/sonner.tsx(3,26): error TS2307: Cannot find module 'next-themes@0.4.6' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/sonner.tsx(4,49): error TS2307: Cannot find module 'sonner@2.0.3' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/switch.tsx(4,34): error TS2307: Cannot find module '@radix-ui/react-switch@1.1.3' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/tabs.tsx(4,32): error TS2307: Cannot find module '@radix-ui/react-tabs@1.1.3' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/toggle-group.tsx(4,39): error TS2307: Cannot find module '@radix-ui/react-toggle-group@1.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/toggle-group.tsx(5,35): error TS2307: Cannot find module 'class-variance-authority@0.7.1' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/toggle.tsx(4,34): error TS2307: Cannot find module '@radix-ui/react-toggle@1.1.2' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/toggle.tsx(5,40): error TS2307: Cannot find module 'class-variance-authority@0.7.1' or its corresponding type declarations.
+src/Components/Home/Counts/components/ui/tooltip.tsx(4,35): error TS2307: Cannot find module '@radix-ui/react-tooltip@1.1.8' or its corresponding type declarations.
+src/Components/Home/Home.tsx(3,1): error TS6133: 'AboutSection' is declared but its value is never read.
+src/Components/Home/Home.tsx(5,1): error TS6133: 'OurProjectsSection' is declared but its value is never read.
+src/Components/Home/Home.tsx(6,1): error TS6133: 'OurJourneySection' is declared but its value is never read.
+src/Components/Home/Home.tsx(7,1): error TS6133: 'FoundersSection' is declared but its value is never read.
+src/Components/Home/Home.tsx(8,1): error TS6133: 'OurClientsSection' is declared but its value is never read.
+src/Components/Infrastructre/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/Components/Infrastructre/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Infrastructre/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Infrastructre/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Infrastructre/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Infrastructre/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Infrastructre/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Infrastructre/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+  Type '"payload"' is not assignable to type '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+src/Components/Infrastructre/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/Components/Infrastructre/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/Components/Infrastructre/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Infrastructre/components/ui/form.tsx(14,8): error TS2307: Cannot find module 'react-hook-form@7.55.0' or its corresponding type declarations.
+src/Components/Infrastructre/components/ui/select.tsx(9,8): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Infrastructre/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Infrastructre/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Infrastructre/Infrastructure.tsx(14,5): error TS6133: 'Camera' is declared but its value is never read.
+src/Components/Journey/components/JourneySection.tsx(21,3): error TS6133: 'Play' is declared but its value is never read.
+src/Components/Journey/components/JourneySection.tsx(22,3): error TS6133: 'Pause' is declared but its value is never read.
+src/Components/Journey/components/JourneySection.tsx(30,3): error TS6133: 'ChevronDown' is declared but its value is never read.
+src/Components/Journey/components/JourneySection.tsx(35,3): error TS6133: 'LineChart' is declared but its value is never read.
+src/Components/Journey/components/JourneySection.tsx(44,3): error TS6133: 'ReferenceDot' is declared but its value is never read.
+src/Components/Journey/components/JourneySection.tsx(45,3): error TS6133: 'Cell' is declared but its value is never read.
+src/Components/Journey/components/JourneySection.tsx(46,3): error TS6133: 'RadialBarChart' is declared but its value is never read.
+src/Components/Journey/components/JourneySection.tsx(47,3): error TS6133: 'RadialBar' is declared but its value is never read.
+src/Components/Journey/components/JourneySection.tsx(48,3): error TS6133: 'PieChart' is declared but its value is never read.
+src/Components/Journey/components/JourneySection.tsx(49,3): error TS6133: 'Pie' is declared but its value is never read.
+src/Components/Journey/components/JourneySection.tsx(204,9): error TS6133: 'IconComponent' is declared but its value is never read.
+src/Components/Journey/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/Components/Journey/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Journey/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Journey/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Journey/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Journey/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Journey/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Journey/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+  Type '"payload"' is not assignable to type '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+src/Components/Journey/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/Components/Journey/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/Components/Journey/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Journey/components/ui/form.tsx(14,8): error TS2307: Cannot find module 'react-hook-form@7.55.0' or its corresponding type declarations.
+src/Components/Journey/components/ui/select.tsx(9,8): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Journey/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Journey/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Navbar/components/ui/badge.tsx(2,22): error TS2307: Cannot find module '@radix-ui/react-slot@1.1.2' or its corresponding type declarations.
+src/Components/Navbar/components/ui/breadcrumb.tsx(2,22): error TS2307: Cannot find module '@radix-ui/react-slot@1.1.2' or its corresponding type declarations.
+src/Components/Navbar/components/ui/button.tsx(2,22): error TS2307: Cannot find module '@radix-ui/react-slot@1.1.2' or its corresponding type declarations.
+src/Components/Navbar/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/Components/Navbar/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Navbar/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Navbar/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Navbar/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Navbar/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Navbar/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Navbar/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+  Type '"payload"' is not assignable to type '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+src/Components/Navbar/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/Components/Navbar/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/Components/Navbar/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Navbar/components/ui/form.tsx(14,8): error TS2307: Cannot find module 'react-hook-form@7.55.0' or its corresponding type declarations.
+src/Components/Navbar/components/ui/select.tsx(9,8): error TS2307: Cannot find module 'lucide-react@0.487.0' or its corresponding type declarations.
+src/Components/Navbar/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Navbar/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Projects/components/ProjectCard.tsx(3,30): error TS6133: 'Users' is declared but its value is never read.
+src/Components/Projects/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/Components/Projects/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Projects/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Projects/components/ui/carousel.tsx(11,20): error TS2304: Cannot find name 'UseEmblaCarouselType'.
+src/Components/Projects/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Projects/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Projects/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Projects/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Projects/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+  Type '"payload"' is not assignable to type '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+src/Components/Projects/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/Components/Projects/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/Components/Projects/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Projects/components/ui/form.tsx(14,8): error TS2307: Cannot find module 'react-hook-form@7.55.0' or its corresponding type declarations.
+src/Components/Projects/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Projects/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Services/components/AdvancedServiceShowcase.tsx(11,3): error TS6133: 'Database' is declared but its value is never read.
+src/Components/Services/components/AdvancedServiceShowcase.tsx(19,3): error TS6133: 'Code' is declared but its value is never read.
+src/Components/Services/components/AdvancedServiceShowcase.tsx(21,3): error TS6133: 'Cloud' is declared but its value is never read.
+src/Components/Services/components/AdvancedServiceShowcase.tsx(27,3): error TS6133: 'Award' is declared but its value is never read.
+src/Components/Services/components/AdvancedServiceShowcase.tsx(29,3): error TS6133: 'CheckCircle' is declared but its value is never read.
+src/Components/Services/components/AdvancedServiceShowcase.tsx(32,3): error TS6133: 'Diamond' is declared but its value is never read.
+src/Components/Services/components/AdvancedServiceShowcase.tsx(76,10): error TS6133: 'hoveredFeature' is declared but its value is never read.
+src/Components/Services/components/AnimatedGISMap.tsx(15,3): error TS6133: 'Home' is declared but its value is never read.
+src/Components/Services/components/AnimatedGISMap.tsx(16,3): error TS6133: 'Car' is declared but its value is never read.
+src/Components/Services/components/AnimatedGISMap.tsx(255,28): error TS6133: 'index' is declared but its value is never read.
+src/Components/Services/components/DynamicHeroSection.tsx(14,3): error TS6133: 'Star' is declared but its value is never read.
+src/Components/Services/components/DynamicHeroSection.tsx(16,3): error TS6133: 'Users' is declared but its value is never read.
+src/Components/Services/components/DynamicHeroSection.tsx(19,3): error TS6133: 'Eye' is declared but its value is never read.
+src/Components/Services/components/DynamicHeroSection.tsx(24,3): error TS6133: 'Diamond' is declared but its value is never read.
+src/Components/Services/components/DynamicHeroSection.tsx(52,36): error TS6133: 'serviceType' is declared but its value is never read.
+src/Components/Services/components/EnhancedPageLayout.tsx(2,10): error TS1484: 'ReactNode' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Services/components/EnhancedPageLayout.tsx(3,10): error TS1484: 'LucideIcon' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Services/components/EnhancedPageLayout.tsx(56,11): error TS2322: Type 'false | { duration: number; delay: number; }' is not assignable to type 'Transition<any> | undefined'.
+  Type 'false' is not assignable to type 'Transition<any> | undefined'.
+src/Components/Services/components/GeographicalMaps.tsx(5,3): error TS6133: 'Users' is declared but its value is never read.
+src/Components/Services/components/GeographicalMaps.tsx(7,3): error TS6133: 'TrendingUp' is declared but its value is never read.
+src/Components/Services/components/GeographicalMaps.tsx(8,3): error TS6133: 'Award' is declared but its value is never read.
+src/Components/Services/components/GeographicalMaps.tsx(9,3): error TS6133: 'Zap' is declared but its value is never read.
+src/Components/Services/components/GeographicalMaps.tsx(43,10): error TS6133: 'selectedDistrict' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(19,7): error TS6133: 'MapPinIcon' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(26,7): error TS6133: 'NavigationIcon' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(53,7): error TS6133: 'FileTextIcon' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(59,7): error TS6133: 'TargetIcon' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(73,7): error TS6133: 'ZapIcon' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(79,7): error TS6133: 'SearchIcon' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(93,7): error TS6133: 'EyeIcon' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(100,7): error TS6133: 'ArrowRightIcon' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(122,7): error TS6133: 'ClockIcon' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(129,7): error TS6133: 'UsersIcon' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(698,26): error TS6133: 'index' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(978,27): error TS6133: 'index' is declared but its value is never read.
+src/Components/Services/components/GISServices.tsx(990,50): error TS6133: 'idx' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(6,3): error TS6133: 'Play' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(7,3): error TS6133: 'Pause' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(8,3): error TS6133: 'Volume2' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(9,3): error TS6133: 'VolumeX' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(11,3): error TS6133: 'Building2' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(16,3): error TS6133: 'Heart' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(17,3): error TS6133: 'Eye' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(18,3): error TS6133: 'Users' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(24,3): error TS6133: 'Camera' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(59,21): error TS6133: 'setIsPlaying' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(60,10): error TS6133: 'isMuted' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(60,19): error TS6133: 'setIsMuted' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(61,10): error TS6133: 'viewMode' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(61,20): error TS6133: 'setViewMode' is declared but its value is never read.
+src/Components/Services/components/ImmersiveTestimonials.tsx(63,9): error TS6133: 'videoRef' is declared but its value is never read.
+src/Components/Services/components/InnovationShowcase.tsx(7,3): error TS6133: 'Smartphone' is declared but its value is never read.
+src/Components/Services/components/InnovationShowcase.tsx(10,3): error TS6133: 'Layers' is declared but its value is never read.
+src/Components/Services/components/InnovationShowcase.tsx(11,3): error TS6133: 'Globe' is declared but its value is never read.
+src/Components/Services/components/InnovationShowcase.tsx(20,3): error TS6133: 'Users' is declared but its value is never read.
+src/Components/Services/components/InnovationShowcase.tsx(21,3): error TS6133: 'Clock' is declared but its value is never read.
+src/Components/Services/components/InnovationShowcase.tsx(23,3): error TS6133: 'Monitor' is declared but its value is never read.
+src/Components/Services/components/InnovationShowcase.tsx(24,3): error TS6133: 'Wifi' is declared but its value is never read.
+src/Components/Services/components/InteractiveDataVisualization.tsx(20,3): error TS6133: 'RotateCcw' is declared but its value is never read.
+src/Components/Services/components/InteractiveDataVisualization.tsx(23,3): error TS6133: 'Maximize' is declared but its value is never read.
+src/Components/Services/components/InteractiveDataVisualization.tsx(43,11): error TS6196: 'ChartData' is declared but never used.
+src/Components/Services/components/InteractiveServiceCard.tsx(3,10): error TS1484: 'LucideIcon' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Services/components/ITServices.tsx(46,7): error TS6133: 'ActivityIcon' is declared but its value is never read.
+src/Components/Services/components/ITServices.tsx(59,7): error TS6133: 'UsersIcon' is declared but its value is never read.
+src/Components/Services/components/ITServices.tsx(708,34): error TS6133: 'index' is declared but its value is never read.
+src/Components/Services/components/ITServices.tsx(736,34): error TS6133: 'index' is declared but its value is never read.
+src/Components/Services/components/LightweightTestimonials.tsx(6,3): error TS6133: 'User' is declared but its value is never read.
+src/Components/Services/components/LightweightTestimonials.tsx(7,3): error TS6133: 'Building2' is declared but its value is never read.
+src/Components/Services/components/LiveGISDashboard.tsx(4,3): error TS6133: 'Map' is declared but its value is never read.
+src/Components/Services/components/LiveGISDashboard.tsx(6,3): error TS6133: 'Satellite' is declared but its value is never read.
+src/Components/Services/components/LiveGISDashboard.tsx(18,3): error TS6133: 'MapPin' is declared but its value is never read.
+src/Components/Services/components/MaharashtraMap.tsx(7,3): error TS6133: 'TrendingUp' is declared but its value is never read.
+src/Components/Services/components/MaharashtraMap.tsx(8,3): error TS6133: 'Award' is declared but its value is never read.
+src/Components/Services/components/MaharashtraMap.tsx(9,3): error TS6133: 'Zap' is declared but its value is never read.
+src/Components/Services/components/MunicipalServices.tsx(553,46): error TS6133: 'index' is declared but its value is never read.
+src/Components/Services/components/MunicipalServicesImproved.tsx(1,1): error TS6133: 'useState' is declared but its value is never read.
+src/Components/Services/components/OptimizedHeroSection.tsx(10,3): error TS6133: 'Star' is declared but its value is never read.
+src/Components/Services/components/OptimizedHeroSection.tsx(12,3): error TS6133: 'Users' is declared but its value is never read.
+src/Components/Services/components/OptimizedHeroSection.tsx(33,38): error TS6133: 'serviceType' is declared but its value is never read.
+src/Components/Services/components/ProfessionalAchievements.tsx(1,20): error TS6133: 'useEffect' is declared but its value is never read.
+src/Components/Services/components/ProfessionalAchievements.tsx(7,3): error TS6133: 'Medal' is declared but its value is never read.
+src/Components/Services/components/ProfessionalAchievements.tsx(9,3): error TS6133: 'Target' is declared but its value is never read.
+src/Components/Services/components/ProfessionalAchievements.tsx(10,3): error TS6133: 'TrendingUp' is declared but its value is never read.
+src/Components/Services/components/ProfessionalAchievements.tsx(15,3): error TS6133: 'CheckCircle' is declared but its value is never read.
+src/Components/Services/components/ProfessionalAchievements.tsx(19,3): error TS6133: 'BarChart3' is declared but its value is never read.
+src/Components/Services/components/ServiceCard.tsx(3,23): error TS1484: 'LucideIcon' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Services/components/SimpleDataVisualization.tsx(4,3): error TS6133: 'BarChart3' is declared but its value is never read.
+src/Components/Services/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/Components/Services/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Services/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/Components/Services/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Services/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; includeHidden?: boolean | undefined; ... 17 more ...; axisId?: AxisId | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/Components/Services/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Services/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/Components/Services/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+  Type '"payload"' is not assignable to type '"string" | "filter" | "fill" | "values" | "children" | "className" | "style" | "mask" | "path" | "clipPath" | "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag" | "layout" | ... 431 more ... | "onBBoxUpdate"'.
+src/Components/Services/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/Components/Services/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/Components/Services/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/Components/Services/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/Components/Services/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.

@@ -1,0 +1,52 @@
+.navbar {
+    border: none;
+    transition: all 0.4s ease;
+}
+
+/* Colors */
+.navbar--color--ghost {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.navbar--color--ghost .navbar-brand,
+.navbar--color--ghost .navbar-text,
+.navbar--color--ghost a {
+    color: white;
+}
+
+.navbar--color--primary {
+    background: #b7b39f;
+}
+
+.navbar--color--primary a {
+    color: white;
+}
+
+/* Sizes */
+.navbar--size--xl {
+    padding: 1rem 0;
+}
+
+.navbar--size--md {
+    padding: 0 0;
+}
+.navbar--color--ghost .dropdown {
+    background: rgba(0, 0, 0, 0.8);
+}
+.navbar--color--ghost .dropdown a {
+    color: white;
+}
+.navbar--color--ghost .dropdown a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+.navbar--color--primary .dropdown {
+    background: #2ea566; /* darker green for contrast */
+}
+
+.navbar--color--primary .dropdown a {
+    color: white;
+}
+
+.navbar--color--primary .dropdown a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
