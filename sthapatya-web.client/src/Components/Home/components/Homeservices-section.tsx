@@ -261,9 +261,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const carouselImages = [
-  "/Services/4.jpg", // Replace with your paths or URLs
+  "/Services/7.jpg", // Replace with your paths or URLs
   "/Services/5.jpg",
-  "/Services/6.jpg",
+  "/Services/8.jpg",
   "/Services/drone.jpg",
 ];
 
