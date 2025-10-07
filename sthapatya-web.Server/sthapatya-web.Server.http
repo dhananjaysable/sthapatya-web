@@ -1,6 +1,0 @@
-@sthapatya_web.Server_HostAddress = http://localhost:5062
-
-GET {{sthapatya_web.Server_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
