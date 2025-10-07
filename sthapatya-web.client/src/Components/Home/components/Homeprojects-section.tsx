@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import Kmlfile  from "./kmlfile";
+// import Kmlfile  from "./kmlfile";
+import Kmlfile  from "./Kmlfile";
 
 const councils = [
     { id: "maharashtra", name: "Maharashtra", region: "Central", projects: 45, residential: 27, commercial: 13, industrial: 4, coords: [180, 280] },
