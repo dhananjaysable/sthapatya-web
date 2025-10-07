@@ -7,8 +7,8 @@ const councils = [
     { id: "Mumbai", name: "Mumbai", region: "Central", projects: 32, coords: [170, 350] },
     { id: "Panvel", name: "Panvel", region: "Central", projects: 28, coords: [120, 220] },
     { id: "Thane", name: "Thane", region: "Central", projects: 15, coords: [150, 180] },
-    { id: "Amaravati", name: "Amaravati", region: "Central", projects: 22, coords: [190, 400] },
-    { id: "andhra", name: "Akola", region: "Central", projects: 18, coords: [210, 360] },
+    { id: "Amravati", name: "Amravati", region: "Central", projects: 22, coords: [190, 400] },
+    { id: "Akola", name: "Akola", region: "Central", projects: 18, coords: [210, 360] },
 ];
 
 const projectCards = [

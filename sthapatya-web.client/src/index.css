@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* We move it 50% because the client list is duplicated */
+    transform: translateX(-50%);
+  }
+}
+
+.scrolling-animation {
+  animation: scroll linear infinite;
+}
+
+.paused {
+  animation-play-state: paused;
+}

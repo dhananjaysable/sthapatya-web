@@ -3,9 +3,10 @@ import { motion } from "motion/react";
 import { Building, Users, Award, Globe, Lightbulb, Target } from "lucide-react";
 
 const milestones = [
-    { year: "2018", title: "Foundation", description: "Sthapatya Consultants established in Mumbai, Maharashtra", icon: <Building className="w-8 h-8" />, position: { x: 10, y: 70 } },
-    { year: "2019", title: "Team Expansion", description: "Grew to 15+ architects and engineers", icon: <Users className="w-8 h-8" />, position: { x: 26, y: 62 } },
-    { year: "2020", title: "First Awards", description: "Recognized for sustainable design excellence", icon: <Award className="w-8 h-8" />, position: { x: 42, y: 54 } },
+    { year: "2001", title: "Company Formation", description: "Sthapatya Consultants established in Mumbai, Maharashtra", icon: <Building className="w-8 h-8" />, position: { x: 10, y: 70 } },
+    // !Description
+    { year: "2015", title: "First Corporation Project", description: "Grew to 15+ architects and engineers", icon: <Users className="w-8 h-8" />, position: { x: 26, y: 62 } },
+    { year: "2020", title: "Completed 50 Projects", description: "Recognized for sustainable design excellence", icon: <Award className="w-8 h-8" />, position: { x: 42, y: 54 } },
     { year: "2021", title: "Innovation Hub", description: "Launched digital design solutions", icon: <Lightbulb className="w-8 h-8" />, position: { x: 58, y: 46 } },
     { year: "2022", title: "Multi-State Presence", description: "Expanded to 5 major Indian states", icon: <Globe className="w-8 h-8" />, position: { x: 74, y: 38 } },
     { year: "2024", title: "Strategic Vision", description: "Targeting nationwide architectural leadership", icon: <Target className="w-8 h-8" />, position: { x: 90, y: 30 } },
@@ -13,7 +14,7 @@ const milestones = [
 
 export function OurJourneySection() {
     return (
-        <section className="flex flex-col items-center py-8 sm:py-12 lg:py-16 xl:py-20 bg-white">
+        <section className="flex flex-col items-center py-8 sm:py-8 lg:py-10 xl:py-16 bg-white">
             <div className="max-w-7xl w-full px-3 sm:px-4 lg:px-6 xl:px-8">
                 {/* Timeline */}
                 <div className="relative w-full h-[16rem] sm:h-[18rem] md:h-[20rem] lg:h-[22rem] xl:h-80">

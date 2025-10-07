@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { 
-  MapPin, 
-  Users, 
-  Building, 
-  TrendingUp, 
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import {
+  MapPin,
+  Users,
+  Building,
+  TrendingUp,
   Award,
   Zap,
   Target,
@@ -12,8 +12,8 @@ import {
   ArrowRight,
   CheckCircle,
   Activity,
-  Star
-} from 'lucide-react';
+  Star,
+} from "lucide-react";
 
 interface District {
   id: string;
@@ -23,7 +23,7 @@ interface District {
   population: string;
   area: string;
   specialization: string;
-  status: 'completed' | 'ongoing' | 'planned';
+  status: "completed" | "ongoing" | "planned";
   description: string;
   achievements: string[];
 }
@@ -32,154 +32,276 @@ interface IndiaState {
   id: string;
   name: string;
   coordinates: { x: number; y: number };
-  status: 'active' | 'planned' | 'target';
+  status: "active" | "planned" | "target";
   projects: number;
 }
 
 export function MaharashtraMap() {
   const [hoveredDistrict, setHoveredDistrict] = useState<District | null>(null);
-  const [selectedDistrict, setSelectedDistrict] = useState<District | null>(null);
+  const [selectedDistrict, setSelectedDistrict] = useState<District | null>(
+    null
+  );
   const [showIndiaExpansion, setShowIndiaExpansion] = useState(false);
   const [animationPhase, setAnimationPhase] = useState(0);
 
   const maharashtraDistricts: District[] = [
     {
-      id: 'mumbai',
-      name: 'Mumbai',
+      id: "mumbai",
+      name: "Mumbai",
       coordinates: { x: 25, y: 70 },
       projects: 45,
-      population: '12.4M',
-      area: '603 km²',
-      specialization: 'Financial Hub & Smart City Initiative',
-      status: 'completed',
-      description: 'India\'s financial capital with advanced municipal digital infrastructure and smart city solutions.',
-      achievements: ['100% Digital Services', 'Smart Traffic Management', 'E-Governance Portal', 'IoT Infrastructure']
+      population: "12.4M",
+      area: "603 km²",
+      specialization: "Financial Hub & Smart City Initiative",
+      status: "completed",
+      description:
+        "India's financial capital with advanced municipal digital infrastructure and smart city solutions.",
+      achievements: [
+        "100% Digital Services",
+        "Smart Traffic Management",
+        "E-Governance Portal",
+        "IoT Infrastructure",
+      ],
     },
     {
-      id: 'pune',
-      name: 'Pune',
+      id: "pune",
+      name: "Pune",
       coordinates: { x: 35, y: 65 },
       projects: 38,
-      population: '3.1M',
-      area: '331 km²',
-      specialization: 'IT Hub & Innovation Center',
-      status: 'completed',
-      description: 'Major IT and automotive hub with comprehensive GIS mapping and digital transformation.',
-      achievements: ['IT Park Management', 'Digital Property Records', 'Smart Parking', 'Online Permit System']
+      population: "3.1M",
+      area: "331 km²",
+      specialization: "IT Hub & Innovation Center",
+      status: "completed",
+      description:
+        "Major IT and automotive hub with comprehensive GIS mapping and digital transformation.",
+      achievements: [
+        "IT Park Management",
+        "Digital Property Records",
+        "Smart Parking",
+        "Online Permit System",
+      ],
     },
     {
-      id: 'nagpur',
-      name: 'Nagpur',
+      id: "nagpur",
+      name: "Nagpur",
       coordinates: { x: 65, y: 45 },
       projects: 28,
-      population: '2.4M',
-      area: '218 km²',
-      specialization: 'Geographic Center & Logistics Hub',
-      status: 'ongoing',
-      description: 'Strategic logistics center with advanced transportation management and smart infrastructure.',
-      achievements: ['Smart Traffic Signals', 'Digital Waste Management', 'GIS-based Planning', 'E-Tendering']
+      population: "2.4M",
+      area: "218 km²",
+      specialization: "Geographic Center & Logistics Hub",
+      status: "ongoing",
+      description:
+        "Strategic logistics center with advanced transportation management and smart infrastructure.",
+      achievements: [
+        "Smart Traffic Signals",
+        "Digital Waste Management",
+        "GIS-based Planning",
+        "E-Tendering",
+      ],
     },
     {
-      id: 'nashik',
-      name: 'Nashik',
+      id: "nashik",
+      name: "Nashik",
       coordinates: { x: 40, y: 35 },
       projects: 22,
-      population: '1.5M',
-      area: '259 km²',
-      specialization: 'Wine Capital & Religious Tourism',
-      status: 'ongoing',
-      description: 'Wine capital with tourism-focused digital services and cultural heritage management.',
-      achievements: ['Tourism Portal', 'Digital Pilgrimage Services', 'Wine Industry GIS', 'Smart Water Management']
+      population: "1.5M",
+      area: "259 km²",
+      specialization: "Wine Capital & Religious Tourism",
+      status: "ongoing",
+      description:
+        "Wine capital with tourism-focused digital services and cultural heritage management.",
+      achievements: [
+        "Tourism Portal",
+        "Digital Pilgrimage Services",
+        "Wine Industry GIS",
+        "Smart Water Management",
+      ],
     },
     {
-      id: 'aurangabad',
-      name: 'Aurangabad',
+      id: "aurangabad",
+      name: "Aurangabad",
       coordinates: { x: 50, y: 45 },
       projects: 18,
-      population: '1.2M',
-      area: '138 km²',
-      specialization: 'Heritage City & Manufacturing',
-      status: 'ongoing',
-      description: 'UNESCO World Heritage site with digital heritage management and industrial automation.',
-      achievements: ['Heritage Site Management', 'Industrial GIS', 'Smart Manufacturing', 'Tourism Analytics']
+      population: "1.2M",
+      area: "138 km²",
+      specialization: "Heritage City & Manufacturing",
+      status: "ongoing",
+      description:
+        "UNESCO World Heritage site with digital heritage management and industrial automation.",
+      achievements: [
+        "Heritage Site Management",
+        "Industrial GIS",
+        "Smart Manufacturing",
+        "Tourism Analytics",
+      ],
     },
     {
-      id: 'solapur',
-      name: 'Solapur',
+      id: "solapur",
+      name: "Solapur",
       coordinates: { x: 55, y: 75 },
       projects: 15,
-      population: '0.95M',
-      area: '181 km²',
-      specialization: 'Textile Hub & Agriculture',
-      status: 'planned',
-      description: 'Major textile center with agricultural technology integration and supply chain digitization.',
-      achievements: ['Textile Industry Mapping', 'Agricultural GIS', 'Supply Chain Tracking', 'Digital Marketplace']
+      population: "0.95M",
+      area: "181 km²",
+      specialization: "Textile Hub & Agriculture",
+      status: "planned",
+      description:
+        "Major textile center with agricultural technology integration and supply chain digitization.",
+      achievements: [
+        "Textile Industry Mapping",
+        "Agricultural GIS",
+        "Supply Chain Tracking",
+        "Digital Marketplace",
+      ],
     },
     {
-      id: 'kolhapur',
-      name: 'Kolhapur',
+      id: "kolhapur",
+      name: "Kolhapur",
       coordinates: { x: 30, y: 85 },
       projects: 12,
-      population: '0.55M',
-      area: '466 km²',
-      specialization: 'Sugar Industry & Cultural Heritage',
-      status: 'planned',
-      description: 'Cultural hub with sugar industry automation and heritage tourism digital solutions.',
-      achievements: ['Cultural Mapping', 'Industry Automation', 'Tourism Development', 'Smart Agriculture']
+      population: "0.55M",
+      area: "466 km²",
+      specialization: "Sugar Industry & Cultural Heritage",
+      status: "planned",
+      description:
+        "Cultural hub with sugar industry automation and heritage tourism digital solutions.",
+      achievements: [
+        "Cultural Mapping",
+        "Industry Automation",
+        "Tourism Development",
+        "Smart Agriculture",
+      ],
     },
     {
-      id: 'amaravati',
-      name: 'Amaravati',
+      id: "amravati",
+      name: "Amravati",
       coordinates: { x: 70, y: 35 },
       projects: 10,
-      population: '0.65M',
-      area: '134 km²',
-      specialization: 'Cotton Trading & Orange Cultivation',
-      status: 'planned',
-      description: 'Agricultural center with cotton trading systems and orange cultivation management.',
-      achievements: ['Agricultural GIS', 'Trading Platform', 'Crop Monitoring', 'Market Analytics']
-    }
+      population: "0.65M",
+      area: "134 km²",
+      specialization: "Cotton Trading & Orange Cultivation",
+      status: "planned",
+      description:
+        "Agricultural center with cotton trading systems and orange cultivation management.",
+      achievements: [
+        "Agricultural GIS",
+        "Trading Platform",
+        "Crop Monitoring",
+        "Market Analytics",
+      ],
+    },
   ];
 
   const indiaStates: IndiaState[] = [
-    { id: 'karnataka', name: 'Karnataka', coordinates: { x: 30, y: 80 }, status: 'active', projects: 25 },
-    { id: 'gujarat', name: 'Gujarat', coordinates: { x: 15, y: 40 }, status: 'active', projects: 18 },
-    { id: 'rajasthan', name: 'Rajasthan', coordinates: { x: 25, y: 25 }, status: 'planned', projects: 12 },
-    { id: 'madhya-pradesh', name: 'Madhya Pradesh', coordinates: { x: 50, y: 35 }, status: 'planned', projects: 15 },
-    { id: 'telangana', name: 'Telangana', coordinates: { x: 55, y: 65 }, status: 'active', projects: 22 },
-    { id: 'tamil-nadu', name: 'Tamil Nadu', coordinates: { x: 45, y: 90 }, status: 'target', projects: 8 },
-    { id: 'kerala', name: 'Kerala', coordinates: { x: 35, y: 95 }, status: 'target', projects: 6 },
-    { id: 'odisha', name: 'Odisha', coordinates: { x: 75, y: 55 }, status: 'planned', projects: 10 },
-    { id: 'west-bengal', name: 'West Bengal', coordinates: { x: 80, y: 45 }, status: 'target', projects: 14 },
-    { id: 'uttar-pradesh', name: 'Uttar Pradesh', coordinates: { x: 60, y: 20 }, status: 'planned', projects: 20 }
+    {
+      id: "karnataka",
+      name: "Karnataka",
+      coordinates: { x: 30, y: 80 },
+      status: "active",
+      projects: 25,
+    },
+    {
+      id: "gujarat",
+      name: "Gujarat",
+      coordinates: { x: 15, y: 40 },
+      status: "active",
+      projects: 18,
+    },
+    {
+      id: "rajasthan",
+      name: "Rajasthan",
+      coordinates: { x: 25, y: 25 },
+      status: "planned",
+      projects: 12,
+    },
+    {
+      id: "madhya-pradesh",
+      name: "Madhya Pradesh",
+      coordinates: { x: 50, y: 35 },
+      status: "planned",
+      projects: 15,
+    },
+    {
+      id: "telangana",
+      name: "Telangana",
+      coordinates: { x: 55, y: 65 },
+      status: "active",
+      projects: 22,
+    },
+    {
+      id: "tamil-nadu",
+      name: "Tamil Nadu",
+      coordinates: { x: 45, y: 90 },
+      status: "target",
+      projects: 8,
+    },
+    {
+      id: "kerala",
+      name: "Kerala",
+      coordinates: { x: 35, y: 95 },
+      status: "target",
+      projects: 6,
+    },
+    {
+      id: "odisha",
+      name: "Odisha",
+      coordinates: { x: 75, y: 55 },
+      status: "planned",
+      projects: 10,
+    },
+    {
+      id: "west-bengal",
+      name: "West Bengal",
+      coordinates: { x: 80, y: 45 },
+      status: "target",
+      projects: 14,
+    },
+    {
+      id: "uttar-pradesh",
+      name: "Uttar Pradesh",
+      coordinates: { x: 60, y: 20 },
+      status: "planned",
+      projects: 20,
+    },
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setAnimationPhase(prev => (prev + 1) % 4);
+      setAnimationPhase((prev) => (prev + 1) % 4);
     }, 4000);
     return () => clearInterval(interval);
   }, []);
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'completed': return '#d8bea5';
-      case 'ongoing': return '#e1d385';
-      case 'planned': return '#ba7b72';
-      case 'active': return '#d8bea5';
-      case 'target': return '#ba7b72';
-      default: return '#95231c';
+      case "completed":
+        return "#d8bea5";
+      case "ongoing":
+        return "#e1d385";
+      case "planned":
+        return "#ba7b72";
+      case "active":
+        return "#d8bea5";
+      case "target":
+        return "#ba7b72";
+      default:
+        return "#95231c";
     }
   };
 
   const getStatusIcon = (status: string) => {
     switch (status) {
-      case 'completed': return CheckCircle;
-      case 'ongoing': return Activity;
-      case 'planned': return Target;
-      case 'active': return Star;
-      case 'target': return ArrowRight;
-      default: return MapPin;
+      case "completed":
+        return CheckCircle;
+      case "ongoing":
+        return Activity;
+      case "planned":
+        return Target;
+      case "active":
+        return Star;
+      case "target":
+        return ArrowRight;
+      default:
+        return MapPin;
     }
   };
 
@@ -196,27 +318,33 @@ export function MaharashtraMap() {
           </motion.div>
           <div>
             <h3 className="text-xl font-medium text-foreground">
-              {showIndiaExpansion ? 'India Expansion Strategy' : 'Maharashtra Operations Hub'}
+              {showIndiaExpansion
+                ? "India Expansion Strategy"
+                : "Maharashtra Operations Hub"}
             </h3>
             <p className="text-sm text-muted-foreground">
-              {showIndiaExpansion ? 'Scaling GIS solutions across India' : 'District-wise project implementation'}
+              {showIndiaExpansion
+                ? "Scaling GIS solutions across India"
+                : "District-wise project implementation"}
             </p>
           </div>
         </div>
-        
+
         <div className="flex items-center space-x-4">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setShowIndiaExpansion(!showIndiaExpansion)}
             className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center space-x-2 ${
-              showIndiaExpansion 
-                ? 'bg-accent text-accent-foreground' 
-                : 'bg-primary text-primary-foreground hover:bg-primary/90'
+              showIndiaExpansion
+                ? "bg-accent text-accent-foreground"
+                : "bg-primary text-primary-foreground hover:bg-primary/90"
             }`}
           >
             <Globe className="w-4 h-4" />
-            <span>{showIndiaExpansion ? 'View Maharashtra' : 'View India'}</span>
+            <span>
+              {showIndiaExpansion ? "View Maharashtra" : "View India"}
+            </span>
           </motion.button>
         </div>
       </div>
@@ -234,7 +362,7 @@ export function MaharashtraMap() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: i * 0.05 }}
                   className="absolute w-px bg-accent/30"
-                  style={{ left: `${i * 8.33}%`, height: '100%' }}
+                  style={{ left: `${i * 8.33}%`, height: "100%" }}
                 />
               ))}
               {Array.from({ length: 10 }).map((_, i) => (
@@ -244,7 +372,7 @@ export function MaharashtraMap() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: i * 0.05 }}
                   className="absolute h-px bg-accent/30"
-                  style={{ top: `${i * 10}%`, width: '100%' }}
+                  style={{ top: `${i * 10}%`, width: "100%" }}
                 />
               ))}
             </div>
@@ -252,14 +380,14 @@ export function MaharashtraMap() {
             {/* Scanning Effect */}
             {animationPhase === 1 && (
               <motion.div
-                animate={{ 
-                  x: ['0%', '100%', '0%'],
-                  opacity: [0, 1, 0]
+                animate={{
+                  x: ["0%", "100%", "0%"],
+                  opacity: [0, 1, 0],
                 }}
-                transition={{ 
-                  duration: 3, 
-                  repeat: Infinity, 
-                  ease: "easeInOut" 
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
                 }}
                 className="absolute inset-y-0 w-1 bg-gradient-to-b from-transparent via-accent to-transparent"
               />
@@ -297,48 +425,52 @@ export function MaharashtraMap() {
                   {/* District Points */}
                   {maharashtraDistricts.map((district, index) => {
                     const StatusIcon = getStatusIcon(district.status);
-                    
+
                     return (
                       <motion.div
                         key={district.id}
                         initial={{ scale: 0, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
-                        transition={{ 
-                          duration: 0.6, 
+                        transition={{
+                          duration: 0.6,
                           delay: index * 0.2,
                           type: "spring",
-                          stiffness: 200
+                          stiffness: 200,
                         }}
                         whileHover={{ scale: 1.4 }}
                         onHoverStart={() => setHoveredDistrict(district)}
                         onHoverEnd={() => setHoveredDistrict(null)}
                         onClick={() => setSelectedDistrict(district)}
                         className="absolute cursor-pointer group"
-                        style={{ 
-                          left: `${district.coordinates.x}%`, 
+                        style={{
+                          left: `${district.coordinates.x}%`,
                           top: `${district.coordinates.y}%`,
-                          transform: 'translate(-50%, -50%)'
+                          transform: "translate(-50%, -50%)",
                         }}
                       >
                         {/* Pulse Animation */}
                         <motion.div
-                          animate={{ 
+                          animate={{
                             scale: [1, 1.8, 1],
-                            opacity: [0.7, 0.2, 0.7]
+                            opacity: [0.7, 0.2, 0.7],
                           }}
-                          transition={{ 
-                            duration: 2, 
+                          transition={{
+                            duration: 2,
                             repeat: Infinity,
-                            ease: "easeInOut"
+                            ease: "easeInOut",
                           }}
                           className="absolute inset-0 rounded-full w-10 h-10"
-                          style={{ backgroundColor: getStatusColor(district.status) }}
+                          style={{
+                            backgroundColor: getStatusColor(district.status),
+                          }}
                         />
-                        
+
                         {/* Main Icon */}
-                        <div 
+                        <div
                           className="relative w-10 h-10 rounded-full flex items-center justify-center shadow-lg z-10 border-2 border-white"
-                          style={{ backgroundColor: getStatusColor(district.status) }}
+                          style={{
+                            backgroundColor: getStatusColor(district.status),
+                          }}
                         >
                           <StatusIcon className="w-4 h-4 text-white" />
                         </div>
@@ -349,8 +481,12 @@ export function MaharashtraMap() {
                           whileHover={{ opacity: 1, y: 0 }}
                           className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-2 bg-card border border-border rounded-lg shadow-lg whitespace-nowrap z-20"
                         >
-                          <p className="text-xs font-medium text-foreground">{district.name}</p>
-                          <p className="text-xs text-muted-foreground">{district.projects} Projects</p>
+                          <p className="text-xs font-medium text-foreground">
+                            {district.name}
+                          </p>
+                          <p className="text-xs text-muted-foreground">
+                            {district.projects} Projects
+                          </p>
                         </motion.div>
 
                         {/* Project Count Badge */}
@@ -370,16 +506,20 @@ export function MaharashtraMap() {
                   {animationPhase === 2 && (
                     <svg className="absolute inset-0 w-full h-full pointer-events-none">
                       {[
-                        ['mumbai', 'pune'],
-                        ['pune', 'nashik'],
-                        ['pune', 'aurangabad'],
-                        ['aurangabad', 'nagpur']
+                        ["mumbai", "pune"],
+                        ["pune", "nashik"],
+                        ["pune", "aurangabad"],
+                        ["aurangabad", "nagpur"],
                       ].map(([from, to], index) => {
-                        const fromDistrict = maharashtraDistricts.find(d => d.id === from);
-                        const toDistrict = maharashtraDistricts.find(d => d.id === to);
-                        
+                        const fromDistrict = maharashtraDistricts.find(
+                          (d) => d.id === from
+                        );
+                        const toDistrict = maharashtraDistricts.find(
+                          (d) => d.id === to
+                        );
+
                         if (!fromDistrict || !toDistrict) return null;
-                        
+
                         return (
                           <motion.line
                             key={`${from}-${to}`}
@@ -432,10 +572,10 @@ export function MaharashtraMap() {
                     animate={{ scale: 1 }}
                     transition={{ delay: 1 }}
                     className="absolute w-8 h-8 border-4 border-accent rounded-lg"
-                    style={{ 
-                      left: '35%', 
-                      top: '60%',
-                      transform: 'translate(-50%, -50%)'
+                    style={{
+                      left: "35%",
+                      top: "60%",
+                      transform: "translate(-50%, -50%)",
                     }}
                   >
                     <div className="w-full h-full bg-accent rounded flex items-center justify-center">
@@ -446,29 +586,31 @@ export function MaharashtraMap() {
                   {/* Other States */}
                   {indiaStates.map((state, index) => {
                     const StatusIcon = getStatusIcon(state.status);
-                    
+
                     return (
                       <motion.div
                         key={state.id}
                         initial={{ scale: 0, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
-                        transition={{ 
-                          duration: 0.5, 
+                        transition={{
+                          duration: 0.5,
                           delay: 1.5 + index * 0.2,
-                          type: "spring"
+                          type: "spring",
                         }}
                         whileHover={{ scale: 1.3 }}
                         className="absolute cursor-pointer group"
-                        style={{ 
-                          left: `${state.coordinates.x}%`, 
+                        style={{
+                          left: `${state.coordinates.x}%`,
                           top: `${state.coordinates.y}%`,
-                          transform: 'translate(-50%, -50%)'
+                          transform: "translate(-50%, -50%)",
                         }}
                       >
                         {/* State Point */}
-                        <div 
+                        <div
                           className="w-6 h-6 rounded-full flex items-center justify-center shadow-lg border border-white"
-                          style={{ backgroundColor: getStatusColor(state.status) }}
+                          style={{
+                            backgroundColor: getStatusColor(state.status),
+                          }}
                         >
                           <StatusIcon className="w-3 h-3 text-white" />
                         </div>
@@ -479,8 +621,12 @@ export function MaharashtraMap() {
                           whileHover={{ opacity: 1, y: 0 }}
                           className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-2 py-1 bg-card border border-border rounded shadow-lg whitespace-nowrap z-20"
                         >
-                          <p className="text-xs font-medium text-foreground">{state.name}</p>
-                          <p className="text-xs text-muted-foreground capitalize">{state.status}</p>
+                          <p className="text-xs font-medium text-foreground">
+                            {state.name}
+                          </p>
+                          <p className="text-xs text-muted-foreground capitalize">
+                            {state.status}
+                          </p>
                         </motion.div>
                       </motion.div>
                     );
@@ -493,10 +639,10 @@ export function MaharashtraMap() {
                       animate={{ scale: 3, opacity: 0 }}
                       transition={{ duration: 2, repeat: Infinity }}
                       className="absolute w-8 h-8 border-2 border-accent rounded-full"
-                      style={{ 
-                        left: '35%', 
-                        top: '60%',
-                        transform: 'translate(-50%, -50%)'
+                      style={{
+                        left: "35%",
+                        top: "60%",
+                        transform: "translate(-50%, -50%)",
                       }}
                     />
                   )}
@@ -518,37 +664,51 @@ export function MaharashtraMap() {
                 className="bg-secondary rounded-xl p-6"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <h4 className="font-medium text-foreground">{hoveredDistrict.name}</h4>
-                  <span 
+                  <h4 className="font-medium text-foreground">
+                    {hoveredDistrict.name}
+                  </h4>
+                  <span
                     className="px-3 py-1 rounded-full text-xs font-medium text-white"
-                    style={{ backgroundColor: getStatusColor(hoveredDistrict.status) }}
+                    style={{
+                      backgroundColor: getStatusColor(hoveredDistrict.status),
+                    }}
                   >
                     {hoveredDistrict.status}
                   </span>
                 </div>
-                
+
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Population:</span>
-                    <span className="text-foreground font-medium">{hoveredDistrict.population}</span>
+                    <span className="text-foreground font-medium">
+                      {hoveredDistrict.population}
+                    </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Area:</span>
-                    <span className="text-foreground font-medium">{hoveredDistrict.area}</span>
+                    <span className="text-foreground font-medium">
+                      {hoveredDistrict.area}
+                    </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Projects:</span>
-                    <span className="text-foreground font-medium">{hoveredDistrict.projects}</span>
+                    <span className="text-foreground font-medium">
+                      {hoveredDistrict.projects}
+                    </span>
                   </div>
                 </div>
-                
+
                 <div className="mt-4">
-                  <p className="text-xs text-muted-foreground mb-2">Specialization:</p>
-                  <p className="text-sm text-foreground">{hoveredDistrict.specialization}</p>
+                  <p className="text-xs text-muted-foreground mb-2">
+                    Specialization:
+                  </p>
+                  <p className="text-sm text-foreground">
+                    {hoveredDistrict.specialization}
+                  </p>
                 </div>
               </motion.div>
             )}
-            
+
             {showIndiaExpansion && (
               <motion.div
                 key="expansion-info"
@@ -557,41 +717,59 @@ export function MaharashtraMap() {
                 exit={{ opacity: 0, x: 20 }}
                 className="bg-secondary rounded-xl p-6"
               >
-                <h4 className="font-medium text-foreground mb-4">India Expansion Strategy</h4>
-                
+                <h4 className="font-medium text-foreground mb-4">
+                  India Expansion Strategy
+                </h4>
+
                 <div className="space-y-4">
                   <div className="p-3 bg-card rounded-lg">
                     <div className="flex items-center space-x-2 mb-2">
                       <div className="w-3 h-3 bg-success rounded-full"></div>
-                      <span className="text-sm font-medium text-foreground">Active States (4)</span>
+                      <span className="text-sm font-medium text-foreground">
+                        Active States (4)
+                      </span>
                     </div>
-                    <p className="text-xs text-muted-foreground">Karnataka, Gujarat, Telangana, Maharashtra</p>
+                    <p className="text-xs text-muted-foreground">
+                      Karnataka, Gujarat, Telangana, Maharashtra
+                    </p>
                   </div>
-                  
+
                   <div className="p-3 bg-card rounded-lg">
                     <div className="flex items-center space-x-2 mb-2">
                       <div className="w-3 h-3 bg-warning rounded-full"></div>
-                      <span className="text-sm font-medium text-foreground">Planned States (5)</span>
+                      <span className="text-sm font-medium text-foreground">
+                        Planned States (5)
+                      </span>
                     </div>
-                    <p className="text-xs text-muted-foreground">Rajasthan, MP, Odisha, UP, Others</p>
+                    <p className="text-xs text-muted-foreground">
+                      Rajasthan, MP, Odisha, UP, Others
+                    </p>
                   </div>
-                  
+
                   <div className="p-3 bg-card rounded-lg">
                     <div className="flex items-center space-x-2 mb-2">
                       <div className="w-3 h-3 bg-info rounded-full"></div>
-                      <span className="text-sm font-medium text-foreground">Target States (4)</span>
+                      <span className="text-sm font-medium text-foreground">
+                        Target States (4)
+                      </span>
                     </div>
-                    <p className="text-xs text-muted-foreground">Tamil Nadu, Kerala, West Bengal, Others</p>
+                    <p className="text-xs text-muted-foreground">
+                      Tamil Nadu, Kerala, West Bengal, Others
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="mt-6 pt-4 border-t border-border">
                   <div className="flex justify-between text-sm">
-                    <span className="text-muted-foreground">Total Projects:</span>
+                    <span className="text-muted-foreground">
+                      Total Projects:
+                    </span>
                     <span className="text-foreground font-medium">248+</span>
                   </div>
                   <div className="flex justify-between text-sm mt-2">
-                    <span className="text-muted-foreground">Projected Growth:</span>
+                    <span className="text-muted-foreground">
+                      Projected Growth:
+                    </span>
                     <span className="text-success font-medium">+340%</span>
                   </div>
                 </div>
@@ -619,45 +797,65 @@ export function MaharashtraMap() {
               className="bg-card rounded-2xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto"
             >
               <div className="flex items-center justify-between mb-6">
-                <h3 className="text-2xl font-medium text-foreground">{selectedDistrict.name}</h3>
-                <button 
+                <h3 className="text-2xl font-medium text-foreground">
+                  {selectedDistrict.name}
+                </h3>
+                <button
                   onClick={() => setSelectedDistrict(null)}
                   className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
                 >
                   ×
                 </button>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 <div className="text-center p-4 bg-secondary rounded-lg">
                   <Users className="w-6 h-6 text-accent mx-auto mb-2" />
-                  <div className="text-lg font-medium text-foreground">{selectedDistrict.population}</div>
-                  <div className="text-xs text-muted-foreground">Population</div>
+                  <div className="text-lg font-medium text-foreground">
+                    {selectedDistrict.population}
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    Population
+                  </div>
                 </div>
                 <div className="text-center p-4 bg-secondary rounded-lg">
                   <Building className="w-6 h-6 text-accent mx-auto mb-2" />
-                  <div className="text-lg font-medium text-foreground">{selectedDistrict.projects}</div>
+                  <div className="text-lg font-medium text-foreground">
+                    {selectedDistrict.projects}
+                  </div>
                   <div className="text-xs text-muted-foreground">Projects</div>
                 </div>
                 <div className="text-center p-4 bg-secondary rounded-lg">
                   <Target className="w-6 h-6 text-accent mx-auto mb-2" />
-                  <div className="text-lg font-medium text-foreground">{selectedDistrict.area}</div>
+                  <div className="text-lg font-medium text-foreground">
+                    {selectedDistrict.area}
+                  </div>
                   <div className="text-xs text-muted-foreground">Area</div>
                 </div>
               </div>
-              
+
               <div className="mb-6">
-                <h4 className="font-medium text-foreground mb-3">Specialization</h4>
-                <p className="text-muted-foreground">{selectedDistrict.specialization}</p>
+                <h4 className="font-medium text-foreground mb-3">
+                  Specialization
+                </h4>
+                <p className="text-muted-foreground">
+                  {selectedDistrict.specialization}
+                </p>
               </div>
-              
+
               <div className="mb-6">
-                <h4 className="font-medium text-foreground mb-3">Description</h4>
-                <p className="text-muted-foreground leading-relaxed">{selectedDistrict.description}</p>
+                <h4 className="font-medium text-foreground mb-3">
+                  Description
+                </h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  {selectedDistrict.description}
+                </p>
               </div>
-              
+
               <div>
-                <h4 className="font-medium text-foreground mb-3">Key Achievements</h4>
+                <h4 className="font-medium text-foreground mb-3">
+                  Key Achievements
+                </h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {selectedDistrict.achievements.map((achievement, index) => (
                     <motion.div
@@ -668,7 +866,9 @@ export function MaharashtraMap() {
                       className="flex items-center space-x-2 p-3 bg-secondary rounded-lg"
                     >
                       <CheckCircle className="w-4 h-4 text-success flex-shrink-0" />
-                      <span className="text-sm text-foreground">{achievement}</span>
+                      <span className="text-sm text-foreground">
+                        {achievement}
+                      </span>
                     </motion.div>
                   ))}
                 </div>

@@ -23,7 +23,7 @@
         align-items: center;
         justify-content: center;
         transition: transform 0.5s ease-in-out;
-        z-index:50;
+        z-index:1;
     }
 
         .card .icon-wrapper svg {
@@ -43,7 +43,7 @@
         left: 1.5rem;
         right: 1.5rem;
         transform: translateY(-50%);
-        z-index: 2;
+        z-index: 1;
         transition: opacity 0.3s ease;
     }
         .card .bottom .content .name,
@@ -109,7 +109,7 @@
             left: 1.5rem;
             right: 1.5rem;
             height: 185px;
-            z-index: 2; /* above background */
+            z-index: 1; /* above background */
         }
         /* Text inside bottom (hidden initially) */
         .card .bottom .content-hover {

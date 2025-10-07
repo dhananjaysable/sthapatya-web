@@ -20,7 +20,7 @@ function App() {
         <Router>
             {/* Navbar on all pages */}
             <Navbar/>
-            <div className="pt-1"> {/* push content below sticky navbar */}
+            <div> {/* push content below sticky navbar */}
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />

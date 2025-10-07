@@ -456,37 +456,78 @@ export const LiquidWaveNavyStyle = ({ index, children }) => {
     );
 };
 
+
+interface LiquidWaveGradientStyleProps {
+  index: number;
+  children: ReactNode;
+}
+
+
 export const LiquidWaveGradientStyle = ({ index, children }) => {
-    return (
-        <motion.div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <motion.div
-                className="absolute bottom-0 left-0 w-full h-full"
-                style={{
-                    background: 'linear-gradient(to top, rgba(17, 24, 39, 0.9) 0%, transparent 100%)',
-                    clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 20%)'
-                }}
-                initial={{ clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)' }}
-                variants={{ hover: { clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 20%)' } }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-            />
-            <motion.div
-                className="absolute bottom-0 left-0 w-full h-full"
-                style={{
-                    background: 'linear-gradient(to top, rgba(75, 85, 99, 0.6) 0%, transparent 80%)',
-                    clipPath: 'polygon(0% 100%, 100% 100%, 100% 10%, 0% 30%)'
-                }}
-                initial={{ clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)' }}
-                variants={{ hover: { clipPath: 'polygon(0% 100%, 100% 100%, 100% 10%, 0% 30%)' } }}
-                transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            />
-            <motion.div
-                className="absolute inset-0 flex items-center justify-center p-4"
-                initial={{ opacity: 0, y: 50 }}
-                variants={{ hover: { opacity: 1, y: 0 } }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-            >
-                {children}
-            </motion.div>
-        </motion.div>
-    );
+  return (
+    <motion.div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <motion.div
+        className="absolute bottom-0 left-0 w-full h-full"
+        style={{
+          background: 'linear-gradient(to top, rgba(17, 24, 39, 0.9) 0%, transparent 100%)',
+          clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 20%)'
+        }}
+        initial={{ clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)' }}
+        variants={{ hover: { clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 20%)' } }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      />
+      <motion.div
+        className="absolute bottom-0 left-0 w-full h-full"
+        style={{
+          background: 'linear-gradient(to top, rgba(75, 85, 99, 0.6) 0%, transparent 80%)',
+          clipPath: 'polygon(0% 100%, 100% 100%, 100% 10%, 0% 30%)'
+        }}
+        initial={{ clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)' }}
+        variants={{ hover: { clipPath: 'polygon(0% 100%, 100% 100%, 100% 10%, 0% 30%)' } }}
+        transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+      />
+      <motion.div
+        className="absolute inset-0 flex items-center justify-center p-4"
+        initial={{ opacity: 0, y: 50 }}
+        variants={{ hover: { opacity: 1, y: 0 } }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
+        {children}
+      </motion.div>
+    </motion.div>
+  );
 };
+// export const LiquidWaveGradientStyle = ({ index, children }) => {
+//     return (
+//         <motion.div className="absolute inset-0 overflow-hidden pointer-events-none">
+//             <motion.div
+//                 className="absolute bottom-0 left-0 w-full h-full"
+//                 style={{
+//                     background: 'linear-gradient(to top, rgba(17, 24, 39, 0.9) 0%, transparent 100%)',
+//                     clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 20%)'
+//                 }}
+//                 initial={{ clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)' }}
+//                 variants={{ hover: { clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 20%)' } }}
+//                 transition={{ duration: 0.8, ease: "easeOut" }}
+//             />
+//             <motion.div
+//                 className="absolute bottom-0 left-0 w-full h-full"
+//                 style={{
+//                     background: 'linear-gradient(to top, rgba(75, 85, 99, 0.6) 0%, transparent 80%)',
+//                     clipPath: 'polygon(0% 100%, 100% 100%, 100% 10%, 0% 30%)'
+//                 }}
+//                 initial={{ clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)' }}
+//                 variants={{ hover: { clipPath: 'polygon(0% 100%, 100% 100%, 100% 10%, 0% 30%)' } }}
+//                 transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+//             />
+//             <motion.div
+//                 className="absolute inset-0 flex items-center justify-center p-4"
+//                 initial={{ opacity: 0, y: 50 }}
+//                 variants={{ hover: { opacity: 1, y: 0 } }}
+//                 transition={{ duration: 0.5, delay: 0.4 }}
+//             >
+//                 {children}
+//             </motion.div>
+//         </motion.div>
+//     );
+// };

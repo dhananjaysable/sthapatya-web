@@ -1,7 +1,8 @@
 import { StickySidebar } from "./components/Homesticky-sidebar"
 import { HomeSection } from './components/home-section';
 import { AboutSection } from './components/Homeabout';
-import { ServicesSection } from './components/Homeservices-section';
+// import { ServicesSection } from './components/Homeservices-section';
+
 import { OurProjectsSection } from './components/Homeprojects-section';
 import { OurJourneySection } from './components/Homejourney-section';
 import { FoundersSection } from './components/Homefounders';
@@ -13,6 +14,7 @@ import "./styles/Home.css";
 import Project from "./components/Project/Project"
 import Founder from "./components/Founder/Founder"
 import About from "./components/About/About"
+import ServicesSection from "./components/Homeservices-section";
 export default function Home() {
     return (
         <div className="w-full">

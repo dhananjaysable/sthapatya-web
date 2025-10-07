@@ -4,9 +4,15 @@ export default {
         "./index.html",
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
-  theme: {
-    extend: {},
-  },
+    theme: {
+      extend: {
+        fontFamily: {
+          montserrat: ["Montserrat", "sans-serif"],
+          roboto: ["Roboto", "sans-serif"],
+          "dancing-script": ['"Dancing Script"', "cursive"],
+        },
+      },
+    },
   plugins: [],
 }
 

@@ -104,7 +104,7 @@ export function AboutSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 1.6 }}
                             viewport={{ once: true }}
-                            className="mt-6 md:mt-8 px-8 py-4 rounded-full text-white text-lg hover:shadow-lg transition-all duration-300"
+                            className="mt-6 md:mt-8 px-8 py-4 rounded-2xl text-white text-lg hover:shadow-lg transition-all duration-300"
                             style={{ backgroundColor: '#95231c', fontFamily: 'Montserrat, sans-serif' }}
                             whileHover={{ scale: 1.05, backgroundColor: '#ba7b72' }}
                             whileTap={{ scale: 0.95 }}
